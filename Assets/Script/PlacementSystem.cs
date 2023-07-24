@@ -29,8 +29,13 @@ public class PlacementSystem : MonoBehaviour
 
     private Vector3Int lastDetectedPosition = Vector3Int.zero;
 
+    [SerializeField]
+    private ObjectPlacer objectPlacer;
 
+    IBuildingState buildingState;
 
+    [SerializeField]
+    private SoundFeedback soundFeedback;
 
     private void Start()
     {

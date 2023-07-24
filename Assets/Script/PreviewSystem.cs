@@ -20,6 +20,7 @@ public class PreviewSystem : MonoBehaviour
     {
         previewMaterialInstance = new Material(previewMaterialPrefab);
         cellIndicator.SetActive(false);
+        cellIndicatorRenderer = cellIndicator.GetComponentInChildren<Renderer>();
     }
 
     public void StartShowingPlacementPreview(GameObject prefab, Vector2Int size)
